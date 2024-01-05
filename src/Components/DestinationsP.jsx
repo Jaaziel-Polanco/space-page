@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function DestinationsP({ destinations, selectedDestination, onDestinationChange }) {
   const handleButtonClick = (destination) => {
     onDestinationChange(destination);

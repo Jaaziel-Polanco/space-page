@@ -14,10 +14,10 @@ function TechP({ technologies, selectedTechnology, onTechnologyChange }) {
 {technologies.map((technology,index) => (
     <button
       key={technology.name}
-      className={`w-10 h-10 tablet:w-16 tablet:h-16 rounded-full bg-white hover:bg-opacity-100 transition-all ${selectedTechnology.name === technology.name ? 'bg-opacity-100' : 'bg-opacity-20'}`}
+      className={`w-10 h-10 tablet:w-16 tablet:h-16 rounded-full bg-white hover:bg-opacity-100 hover:w-12 hover:h-12 tablet:hover:h-20 hover:tablet:w-20 transition-all ${selectedTechnology.name === technology.name ? 'bg-opacity-100' : 'bg-opacity-20'}`}
       onClick={() => onTechnologyChange(technology)}
     >
-        <span className={`text-${selectedTechnology.name === technology.name ? 'black' : 'white'} text-base font-normal font-Bellefair tracking-wide`}>
+        <span className={`text-${selectedTechnology.name === technology.name ? 'black' : 'white'} text-base tablet:text-2xl font-normal hover:text-black font-Bellefair tracking-wide`}>
             {index + 1}</span>
     </button>
   ))}

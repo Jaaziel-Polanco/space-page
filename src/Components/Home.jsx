@@ -24,7 +24,7 @@ function Home() {
       </div>
       </div>
       
-      <div className='flex justify-center lg:mt-28'>
+      <div className='flex justify-center lg:mt-28 animate-bounce animate-infinite'>
       <div className="w-[220px] h-[220px] tablet:w-[312px] tablet:h-[312px] relative mt-14 flex justify-center pt-9 rounded-full hover:bg-gray-500 transition-all duration-1000">
        <Link className='flex justify-center' to={'/DESTINATION'}>
         <button className="w-[150px] h-[150px] tablet:w-[242px] tablet:h-[242px] text-gray-950 text-xl tablet:text-[32px] font-normal font-Bellefair tracking-wider absolute bg-white rounded-full animate-pulse animate-infinite animate-duration-[1500ms] animate-ease-in animate-normal animate-fill-both">EXPLORE</button>

@@ -21,7 +21,7 @@ function CrewP({ crews, selectedCrew, onCrewChange }) {
   {crews.map((crew) => (
     <button
       key={crew.name}
-      className={`w-3 h-3 rounded-full bg-white hover:bg-opacity-100 transition-all ${selectedCrew.name === crew.name ? 'bg-opacity-100' : 'bg-opacity-20'}`}
+      className={`w-3 h-3 rounded-full bg-white hover:bg-opacity-100 hover:h-5 hover:w-5 transition-all ${selectedCrew.name === crew.name ? 'bg-opacity-100' : 'bg-opacity-20'}`}
       onClick={() => onCrewChange(crew)}
     />
   ))}
@@ -38,7 +38,7 @@ function CrewP({ crews, selectedCrew, onCrewChange }) {
   {crews.map((crew) => (
     <button
       key={crew.name}
-      className={`w-4 h-4 rounded-full bg-white hover:bg-opacity-100 transition-all ${selectedCrew.name === crew.name ? 'bg-opacity-100' : 'bg-opacity-20'}`}
+      className={`w-4 h-4 rounded-full bg-white hover:bg-opacity-100 hover:w-6 hover:h-6 transition-all ${selectedCrew.name === crew.name ? 'bg-opacity-100' : 'bg-opacity-20'}`}
       onClick={() => onCrewChange(crew)}
        />
        ))}

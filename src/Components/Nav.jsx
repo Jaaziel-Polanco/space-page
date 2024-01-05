@@ -1,6 +1,10 @@
 import React from 'react'
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import menu from '../assets/icon-hamburger.svg'
+import logo from '../assets/logo.svg'
+
+
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,9 +12,9 @@ function Nav() {
   return (
     <>
        <div className='flex justify-between min-[700px]:hidden'>
-       <div> <a href="/"> <img src="./src/assets/logo.svg" alt="logo" className='w-10 h-10 absolute bg-white rounded-full' /></a></div> 
+       <div> <a href="/"> <img src={logo} alt="logo" className='w-10 h-10 absolute bg-white rounded-full' /></a></div> 
        <button type="button" onClick={() => setIsOpen(!isOpen)}>
-         <img src="./src/assets/icon-hamburger.svg" alt="icon-menu" className='w-6 h-[21px] mt-2 '/> </button>
+         <img src={menu} alt="icon-menu" className='w-6 h-[21px] mt-2 hover:w-8 hover:h-[25px] transition-all '/> </button>
       </div>
       {isOpen ? (
           <div className="fixed top-0 right-0 w-4/6 h-screen shadow-lg bg-transparent bg-opacity-100 backdrop-blur-lg text-white z-10 animate-fade-left animate-once animate-duration-[2300ms] animate-ease-in-out animate-normal animate-fill-both">

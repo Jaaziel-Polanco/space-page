@@ -1,5 +1,22 @@
 import { createContext } from "react";
-import imagenn from '../assets/destination/image-moon.png'
+import Luna from '../assets/destination/image-moon.png'
+import Mars from '../assets/destination/image-mars.png'
+import Europa from '../assets/destination/image-europa.png'
+import Titan from '../assets/destination/image-titan.png'
+
+import persona1 from '../assets/crew/image-douglas-hurley.png'
+import persona2 from '../assets/crew/image-mark-shuttleworth.png'
+import persona3 from '../assets/crew/image-victor-glover.png'
+import persona4 from '../assets/crew/image-anousheh-ansari.png'
+
+import vehicle1 from '../assets/technology/image-launch-vehicle-landscape.jpg'
+import vehicle1P from '../assets/technology/image-launch-vehicle-portrait.jpg'
+
+import vehicle2 from '../assets/technology/image-spaceport-landscape.jpg'
+import vehicle2P from '../assets/technology/image-spaceport-portrait.jpg'
+
+import vehicle3 from '../assets/technology/image-space-capsule-landscape.jpg'
+import vehicle3P from '../assets/technology/image-space-capsule-portrait.jpg'
 
 export const DataContext = createContext();
 
@@ -9,7 +26,7 @@ const contextData = {
       {
         "name": "Moon",
         "images": {
-          "png": "src/assets/destination/image-moon.png",
+          "png": Luna,
           "webp": "/assets/destination/image-moon.webp"
         },
         "description": "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
@@ -19,7 +36,7 @@ const contextData = {
       {
         "name": "Mars",
         "images": {
-          "png": "src/assets/destination/image-mars.png",
+          "png": Mars,
           "webp": "../assets/destination/image-mars.webp"
         },
         "description": "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
@@ -29,7 +46,7 @@ const contextData = {
       {
         "name": "Europa",
         "images": {
-          "png": "src/assets/destination/image-europa.png",
+          "png": Europa,
           "webp": "../assets/destination/image-europa.webp"
         },
         "description": "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
@@ -39,7 +56,7 @@ const contextData = {
       {
         "name": "Titan",
         "images": {
-          "png": "src/assets/destination/image-titan.png",
+          "png": Titan,
           "webp": "../assets/destination/image-titan.webp"
         },
         "description": "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
@@ -51,7 +68,7 @@ const contextData = {
       {
         "name": "Douglas Hurley",
         "images": {
-          "png": "src/assets/crew/image-douglas-hurley.png",
+          "png": persona1,
           "webp": "./assets/crew/image-douglas-hurley.webp"
         },
         "role": "Commander",
@@ -60,7 +77,7 @@ const contextData = {
       {
         "name": "Mark Shuttleworth",
         "images": {
-          "png": "src/assets/crew/image-mark-shuttleworth.png",
+          "png": persona2,
           "webp": "./assets/crew/image-mark-shuttleworth.webp"
         },
         "role": "Mission Specialist",
@@ -69,7 +86,7 @@ const contextData = {
       {
         "name": "Victor Glover",
         "images": {
-          "png": "src/assets/crew/image-victor-glover.png",
+          "png": persona3,
           "webp": "./assets/crew/image-victor-glover.webp"
         },
         "role": "Pilot",
@@ -78,7 +95,7 @@ const contextData = {
       {
         "name": "Anousheh Ansari",
         "images": {
-          "png": "src/assets/crew/image-anousheh-ansari.png",
+          "png": persona4,
           "webp": "./assets/crew/image-anousheh-ansari.webp"
         },
         "role": "Flight Engineer",
@@ -89,24 +106,24 @@ const contextData = {
       {
         "name": "Launch vehicle",
         "images": {
-          "portrait": "src/assets/technology/image-launch-vehicle-portrait.jpg",
-          "landscape": "src/assets/technology/image-launch-vehicle-landscape.jpg"
+          "portrait": vehicle1P,
+          "landscape": vehicle1
         },
         "description": "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!"
       },
       {
         "name": "Spaceport",
         "images": {
-          "portrait": "src/assets/technology/image-spaceport-portrait.jpg",
-          "landscape": "src/assets/technology/image-spaceport-landscape.jpg"
+          "portrait": vehicle2P,
+          "landscape": vehicle2
         },
         "description": "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch."
       },
       {
         "name": "Space capsule",
         "images": {
-          "portrait": "src/assets/technology/image-space-capsule-portrait.jpg",
-          "landscape": "src/assets/technology/image-space-capsule-landscape.jpg"
+          "portrait": vehicle3P,
+          "landscape": vehicle3
         },
         "description": "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained."
       }

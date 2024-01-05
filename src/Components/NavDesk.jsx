@@ -1,12 +1,13 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import logo from '../assets/logo.svg'
 
 
 function NavDesk() {
   return (
     <>
     <div className=' hidden min-[700px]:flex justify-between lg:py-12'>
-       <div> <a href="/"> <img src="/src/assets/logo.svg" alt="logo" className='m-6 lg:m-0 lg:ml-12 lg:mt-5 w-10 h-10 absolute bg-white rounded-full' /></a></div>
+       <div> <a href="/"> <img src={logo} alt="logo" className='m-6 lg:m-0 lg:ml-12 lg:mt-5 w-10 h-10 absolute bg-white rounded-full' /></a></div>
 
        <div className="hidden lg:flex w-[400px] ml-44 mt-12 h-px opacity-25 bg-white" />
        
